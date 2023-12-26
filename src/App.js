@@ -1,14 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Box } from '@mui/material';
+import {  Navbar } from './components';
 
 function App() {
-  return (
-    <div className="App">
-     <h1>
-      Hello React
-     </h1>
-    </div>
-  );
+  // <BrowserRouter>
+  return(
+    <Box sx={{ backgroundColor: '#000' }}>
+    <Navbar />
+  </Box>
+  )
+ 
+  {/* </BrowserRouter> */}
 }
 
 export default App;
