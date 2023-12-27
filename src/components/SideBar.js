@@ -5,22 +5,22 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const onhandleSubmit = (e) => {
-  //   e.preventDefault();
+  const onhandleSubmit = (e) => {
+    e.preventDefault();
 
-  //   if (searchTerm) {
-  //     navigate(`/search/${searchTerm}`);
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`);
 
-  //     setSearchTerm('');
-  //   }
-  // };
+      setSearchTerm('');
+    }
+  };
 
   return (
     <Paper
       component='form'
-      // onSubmit={onhandleSubmit}
+      onSubmit={onhandleSubmit}
       sx={{
         borderRadius: 20,
         border: '1px solid #e3e3e3',
